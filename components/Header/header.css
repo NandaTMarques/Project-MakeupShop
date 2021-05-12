@@ -1,0 +1,16 @@
+.header {
+  display:flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.makeup-logo {
+  display: flex;
+  width: 200px;
+}
+.cart {
+  display: flex;
+  height: 50px;
+  width: 50px;
+
+}

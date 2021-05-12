@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0182)https://github1s.com/static-c4886ef/vscode/vs/workbench/services/extensions/worker/httpWebWorkerExtensionHostIframe.html?vscodeWebWorkerExtHostId=a5942a2b-3591-4e5b-90fc-9d6ed4064159 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; child-src &#39;self&#39; data:; script-src &#39;unsafe-eval&#39; &#39;sha256-DhNBVT9y4y9LG937ZrEbN5CwALd+WSpQnG3z5u1MOFk=&#39; http: https:; connect-src http: https:">
+	<link href="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/inject.css" type="text/css" rel="stylesheet"></head>
+	<body class="vsc-initialized">
+	<script>
+(function() {
+	const idMatch = document.location.search.match(/\bvscodeWebWorkerExtHostId=([0-9a-f\-]+)/i);
+	const vscodeWebWorkerExtHostId = idMatch ? idMatch[1] : '';
+
+	function sendError(error) {
+		window.parent.postMessage({
+			vscodeWebWorkerExtHostId,
+			error: {
+				name: error ? error.name : '',
+				message: error ? error.message : '',
+				stack: error ? error.stack : []
+			}
+		}, '*');
+	}
+
+	try {
+		const worker = new Worker('extensionHostWorkerMain.js', { name: 'WorkerExtensionHost' });
+
+		worker.onmessage = (event) => {
+			const { data } = event;
+			window.parent.postMessage({
+				vscodeWebWorkerExtHostId,
+				data
+			}, '*', [data]);
+		};
+
+		worker.onerror = (event) => {
+			console.error(event.message, event.error);
+			sendError(event.error);
+		};
+	} catch(err) {
+		console.error(err);
+		sendError(err);
+	}
+})();
+	</script>
+	
+
+</body></html>
