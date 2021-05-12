@@ -3,6 +3,9 @@
 <h4> 
 	🚧  React Select 🚀 Em construção...  🚧
 </h4>
+
+---
+
 ### Features
 
 - [x] Criar Header
@@ -15,18 +18,22 @@
 - [ ] Criar Search bar
 - [ ] Criar Product list
 
+---
+
  <a href="#descricao">Descrição do Projeto</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#licenc-a">Licença</a> • 
  <a href="#autor">Autor</a>
 </p>
 
-## Descrição do Projeto
+---
+
+## 💻 Descrição do Projeto
 
 <p>Nesse projeto eu farei um site de vendas de maquiagens consumindo dados diretamente de uma API!</p>
-<p>Aqui usarei a API do Mercado Livre para buscarmos produtos à venda.</>
+<p>Aqui usarei a API do Mercado Livre para buscarmos produtos à venda.</p>
  
- <p>
+ ---
 
 ### 🛠 Tecnologias
 
@@ -38,5 +45,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Redux](https://redux.js.org/)
 - [Jest](https://jestjs.io/pt-BR/)
 
-### Autor
-Feito com heart por Fernanda T. Marques 👋🏽 Entre em contato!
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Fernanda Teixeira Marques 👋🏽 [Entre em contato!](https://www.linkedin.com/in/fernandadesenvolvedoraweb/)
+
+---
