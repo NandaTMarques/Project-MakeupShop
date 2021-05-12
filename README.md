@@ -1,5 +1,8 @@
 # Project-MakeupShop
 
+<h4> 
+	🚧  React Select 🚀 Em construção...  🚧
+</h4>
 
  <a href="#descricao">Descrição do Projeto</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
