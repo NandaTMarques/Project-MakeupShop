@@ -22,14 +22,6 @@
 
 ---
 
- <a href="#descricao">Descrição do Projeto</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#licenc-a">Licença</a> • 
- <a href="#autor">Autor</a>
-</p>
-
----
-
 ## 💻 Descrição do Projeto
 
 <p>Nesse projeto eu farei um site de vendas de maquiagens consumindo dados diretamente de uma API!</p>
